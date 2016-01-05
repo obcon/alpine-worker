@@ -1,5 +1,6 @@
 console.log("Hello Worker!");
-console.log("Doing some work ...");
+var workingTime = Math.floor((Math.random() * 10) + 5);
+console.log("Doing some work for " + workingTime + " seconds ...");
 setTimeout(function(){
 	console.log("[x] done!");
-    }, 10000);
+    }, workingTime * 1000);
